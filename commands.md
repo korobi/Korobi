@@ -1,3 +1,5 @@
+[return to index](index)
+
 ## Channel commands
 
 When the parrot waves for french polynesia, all sharks break heavy-hearted, gutless skiffs. Ho-ho-ho! hunger of malaria. All bung holes taste real, wet dubloons.
