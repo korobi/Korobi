@@ -18,7 +18,7 @@ a matter of using the 'addcmd' command. The command has a number of aliases whic
 mandatory argument (the command name) and an optional value. Omitting a value for the command will send you a notice
 with information about the supplied command name, if it exists.
 
-A basic command could be created by executing `.addcmd pastebin Please use http://pastebin.com for long text`. All users
+A basic command could be created by executing `.addcmd gist Please use https://gist.github.com for long text`. All users
 can then use the command by typing `.pastebin` which will print the result to the channel.
 
 More advanced commands can be created by using the two switches, -a and -v. The -a switch tells Korobi to create an
