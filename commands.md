@@ -21,6 +21,8 @@ with information about the supplied command name, if it exists.
 A basic command could be created by executing `.addcmd gist Please use https://gist.github.com for long text`. All users
 can then use the command by typing `.pastebin` which will print the result to the channel.
 
+#### Advanced commands
+
 More advanced commands can be created by using the two switches, -a and -v. The -a switch tells Korobi to create an
 action command. The bot will then send a CTCP ACTION message which is the equivalent of what would be sent from most
 IRC clients using the `/me` command. For example, a simple action command could be created with `.addcmd -a cry cries`.
@@ -28,24 +30,41 @@ When executed, the output in the chat is as follows:
 
 "\* Korobi cries"
 
-More advanced action commands can be created by referring to command arguments. These are represented as array indexes
-surrounded with curly braces and are replaced with whatever the user supplies. For example, `.addcmd -a hit hits {0}`
-would add a new command that can be invoked by typing `.hit <name>` in the channel. `.hit lol768` would produce the
-following output:
+You can also create commands which refer to command arguments. These are represented as array indexes surrounded with
+curly braces and are replaced with whatever the user supplies. For example, `.addcmd -a hit hits {0}` would add a
+new command that can be invoked by typing `.hit <name>` in the channel. `.hit lol768` would produce the following
+output:
 
 "\* Korobi hits lol768"
 
 The system will automatically ensure that the correct number of arguments are supplied when the user runs the command.
-An incorrect number of arguments will result in an error message notice being sent. It's possible to append multiple
-variations of a command with the -v switch. For example, consider a channel in which a ".hit" command already exists
-and is defined as described above. By executing `.addcmd -a -v hit hits {0} with a {1}` you can add to the existing command.
-If the user executes `.hit lol768` the output will be "\* Korobi hits lol768" and if the user executes `.hit lol768 stick`
-the output will be "\* Korobi hits lol768 with a stick".
+An incorrect number of arguments will result in an error message notice being sent.
+
+It's possible to create multiple variations of a command with the -v switch. For example, consider a channel in which a
+".hit" command already exists and is defined as described above. By executing `.addcmd -a -v hit hits {0} with a {1}`
+you can add another value to the existing command. if the user executes `.hit lol768` the output will be "\* Korobi
+hits lol768" and if the user executes `.hit lol768 stick` the output will be "\* Korobi hits lol768 with a stick".
+
+### Adding aliases for commands
+
+**Usage:** `.<addalias> <command name> <alias name> [2nd alias] [another alias]...`
+
+Dynamic commands are normally invoked by using the command prefix followed by the command name but in some cases you
+may with to create command aliases to make the command more user friendly to use. You can do this by executing the
+addalias command and providing the 'real' command name as the first argument and a space-separated list of aliases as
+the next arguments.
+
+You can view all of the aliases for a command by executing the `addcmd` (alias `cmdinfo`) command. This will list all
+ of the aliases attached to the supplied command.
 
 ### Removing commands
 
 **Usage:** `.<delcmd|unsetcmd> [-i <index>] <name>`
 
-### Adding aliases for commands
+Removing dynamic commands is very straightforward: simply issue the `delcmd` command and pass in the name of the command
+you want to remove. In addition to normal commands, you can use `delcmd` or one of its aliases to remove a user-created
+command alias.
 
-**Usage:** `.<addalias> <command name> <alias name> [2nd alias] [another alias]...`
+If you've added multiple values to a command as described above, you can use the -i option to specify the index of the
+value to remove. You can get a list of values with the `cmdinfo` command. At present, the first value is treated as
+the 0th index, so to remove the first value of the `hit` command you could use `.delcmd -i 0 hit`.
