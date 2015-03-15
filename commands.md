@@ -41,3 +41,11 @@ variations of a command with the -v switch. For example, consider a channel in w
 and is defined as described above. By executing `.addcmd -a -v hit hits {0} with a {1}` you can add to the existing command.
 If the user executes `.hit lol768` the output will be "\* Korobi hits lol768" and if the user executes `.hit lol768 stick`
 the output will be "\* Korobi hits lol768 with a stick".
+
+### Removing commands
+
+**Usage:** `.<delcmd|unsetcmd> [-i <index>] <name>`
+
+### Adding aliases for commands
+
+**Usage:** `.<addalias> <command name> <alias name> [2nd alias] [another alias]...`
