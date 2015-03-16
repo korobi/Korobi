@@ -68,3 +68,19 @@ command alias.
 If you've added multiple values to a command as described above, you can use the -i option to specify the index of the
 value to remove. You can get a list of values with the `cmdinfo` command. At present, the first value is treated as
 the 0th index, so to remove the first value of the `hit` command you could use `.delcmd -i 0 hit`.
+
+
+### Targeting commands
+
+**Note:** In the table below, `.` is used as a placeholder channel command prefix. This will need to be changed if
+the channel you are targeting commands in uses a different prefix.
+
+| Command prefix | Explanation                                                                                                                  |
+|----------------|------------------------------------------------------------------------------------------------------------------------------|
+| .              | No user is targeted.                                                                                                         |
+| .>             | After the command name, a comma-separated list of users to target should be supplied. These users are pinged in the channel. |
+| .>>            | After the command name, a comma-separated list of users to target should be supplied. These users are sent a notice.         |
+| .<             | Korobi will send you a notice with the channel contents in. Useful if you don't want to spam the channel.                    |
+
+For example, I could send the results of the `.factions` command to users lol768 and Kashike in a notice by executing
+`.>> factions lol768,Kashike`.
