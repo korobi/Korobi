@@ -19,7 +19,7 @@ mandatory argument (the command name) and an optional value. Omitting a value fo
 with information about the supplied command name, if it exists.
 
 A basic command could be created by executing `.addcmd gist Please use https://gist.github.com for long text`. All users
-can then use the command by typing `.pastebin` which will print the result to the channel.
+can then use the command by typing `.gist` which will print the result to the channel.
 
 #### Advanced commands
 
