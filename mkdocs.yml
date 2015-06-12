@@ -1,6 +1,0 @@
-site_name: Korobi
-repo_url: https://github.com/korobi/Korobi/
-
-pages:
-- ['index.md', 'Introduction']
-- ['commands.md', 'Channel Commands']

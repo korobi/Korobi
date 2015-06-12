@@ -1,4 +1,6 @@
-## Channel commands
+================
+Channel Commands
+================
 
 Korobi allows channel operators to create dynamic commands in a channel. Commands output a preset piece of text to a
 channel, either as a standard message or action. Commands can be targeted at individual users and sent via a notice
@@ -9,7 +11,8 @@ Channel commands are triggered by using the channel command prefix (configurable
 name or an alias. The command prefix is included on the channel overview page. For simplicity, the documentation
 assumes a command prefix of '.'.
 
-### Creating a new command
+Creating a new command
+======================
 
 **Usage:** `.<addcmd|setcmd|cmdinfo> [-a] [-v] <name> [value]`
 
@@ -21,7 +24,8 @@ with information about the supplied command name, if it exists.
 A basic command could be created by executing `.addcmd gist Please use https://gist.github.com for long text`. All users
 can then use the command by typing `.gist` which will print the result to the channel.
 
-#### Advanced commands
+Advanced commands
+~~~~~~~~~~~~~~~~~
 
 More advanced commands can be created by using the two switches, -a and -v. The -a switch tells Korobi to create an
 action command. The bot will then send a CTCP ACTION message which is the equivalent of what would be sent from most
@@ -45,7 +49,8 @@ It's possible to create multiple variations of a command with the -v switch. For
 you can add another value to the existing command. if the user executes `.hit lol768` the output will be "\* Korobi
 hits lol768" and if the user executes `.hit lol768 stick` the output will be "\* Korobi hits lol768 with a stick".
 
-### Adding aliases for commands
+Adding aliases for commands
+===========================
 
 **Usage:** `.<addalias> <command name> <alias name> [2nd alias] [another alias]...`
 
@@ -57,7 +62,8 @@ the next arguments.
 You can view all of the aliases for a command by executing the `addcmd` (alias `cmdinfo`) command. This will list all
  of the aliases attached to the supplied command.
 
-### Removing commands
+Removing commands
+=================
 
 **Usage:** `.<delcmd|unsetcmd> [-i <index>] <name>`
 
@@ -70,17 +76,22 @@ value to remove. You can get a list of values with the `cmdinfo` command. At pre
 the 0th index, so to remove the first value of the `hit` command you could use `.delcmd -i 0 hit`.
 
 
-### Targeting commands
+Targeting commands
+==================
 
-**Note:** In the table below, `.` is used as a placeholder channel command prefix. This will need to be changed if
-the channel you are targeting commands in uses a different prefix.
+.. Note::
+    In the table below, `.` is used as a placeholder channel command prefix. This will need to be changed if the channel you are targeting commands in uses a different prefix.
 
++----------------+------------------------------------------------------------------------------------------------------------------------------+
 | Command prefix | Explanation                                                                                                                  |
-|----------------|------------------------------------------------------------------------------------------------------------------------------|
++================+==============================================================================================================================+
 | .              | No user is targeted.                                                                                                         |
++----------------+------------------------------------------------------------------------------------------------------------------------------+
 | .>             | After the command name, a comma-separated list of users to target should be supplied. These users are pinged in the channel. |
++----------------+------------------------------------------------------------------------------------------------------------------------------+
 | .>>            | After the command name, a comma-separated list of users to target should be supplied. These users are sent a notice.         |
++----------------+------------------------------------------------------------------------------------------------------------------------------+
 | .<             | Korobi will send you a notice with the channel contents in. Useful if you don't want to spam the channel.                    |
++----------------+------------------------------------------------------------------------------------------------------------------------------+
 
-For example, I could send the results of the `.factions` command to users lol768 and Kashike in a notice by executing
-`.>> factions lol768,Kashike`.
+For example, I could send the results of the `.factions` command to users lol768 and Kashike in a notice by executing `.>> factions lol768,Kashike`.
