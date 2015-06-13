@@ -2,6 +2,8 @@
 
 # Copy static files
 cp -R ./etc/static/. build/
+cp build/_static/404.html build/404.html
+rm build/_static/404.html
 
 # Deploy
 cd build
