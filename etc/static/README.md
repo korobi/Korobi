@@ -1,3 +1,3 @@
-KorobiDocs
-==========
-The static documentation is stored here, if you wish to contribute please use https://github.com/Korobi/Korobi
+Korobi Documentation
+====================
+The static documentation is stored here, if you wish to contribute please switch to the master branch.

@@ -79,7 +79,7 @@ the 0th index, so to remove the first value of the `hit` command you could use `
 Targeting commands
 ==================
 
-.. Note::
+.. note::
     In the table below, `.` is used as a placeholder channel command prefix. This will need to be changed if the channel you are targeting commands in uses a different prefix.
 
 +----------------+------------------------------------------------------------------------------------------------------------------------------+
