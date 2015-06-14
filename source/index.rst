@@ -23,4 +23,4 @@ This section is for users who want to enhance their channel by using Korobi.
    :maxdepth: 3
    :titlesonly:
 
-   channel/commands
+   channel/index
