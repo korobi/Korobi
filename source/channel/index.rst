@@ -23,5 +23,5 @@ Contents
     :maxdepth: 2
     :titlesonly:
 
-    commands/index
     requesting
+    commands/index

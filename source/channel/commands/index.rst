@@ -23,5 +23,5 @@ Contents
 
     creating
     aliases
-    removing
     targeting
+    removing
