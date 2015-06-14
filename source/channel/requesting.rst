@@ -2,7 +2,7 @@
 Requesting Korobi
 =================
 
-Requesting Korobi for your channel, couldn't be easier!
+Requesting Korobi for your channel couldn't be easier!
 Just ask in #korobi on irc.esper.net.
 
 Prerequisites
