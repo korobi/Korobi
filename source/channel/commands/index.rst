@@ -12,7 +12,7 @@ to you without appearing in the channel.
 
 Channel commands are triggered by using the channel command prefix (configurable per channel) followed by the command
 name or an alias. The command prefix is included on the channel overview page. For simplicity, the documentation
-assumes a command prefix of '.'.
+assumes a command prefix of a period.
 
 Contents
 ========

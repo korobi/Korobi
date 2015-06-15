@@ -223,7 +223,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'Korobi.tex', u'Korobi Documentation',
-   u'Korobi Team', 'manual'),
+   u'korobi.io team and contributors', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -267,7 +267,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   (master_doc, 'Korobi', u'Korobi Documentation',
-   author, 'Korobi', 'One line description of project.',
+   author, 'Korobi', 'Cross-network IRC bot aimed at making channel management easier.',
    'Miscellaneous'),
 ]
 
