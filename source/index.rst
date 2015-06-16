@@ -6,6 +6,8 @@ Introduction
 ============
 
 Welcome to the official documentation for the `Korobi <https://korobi.io/>`__ project.
+It aims to be simple and informative, if you find anything that is hard to understand or bad English please feel free
+to report it in the form of a GitHub issue, on our `Documentation project <https://github.com/korobi/Korobi/issues>`__.
 
 What is Korobi?
 ~~~~~~~~~~~~~~~
@@ -23,8 +25,8 @@ Contents
 Channel Management
 ~~~~~~~~~~~~~~~~~~
 
-This section is for users who want to take a 'back seat' approach to managing their channel, and let Korobi do all
-the work.
+This section is for users who want to take a 'back-seat' approach to managing their channel, and let Korobi do all
+the hard work.
 
 .. toctree::
    :maxdepth: 3
