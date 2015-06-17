@@ -89,3 +89,6 @@ local.properties
 
 # Sphinx
 build/
+
+# Node
+node_modules/
