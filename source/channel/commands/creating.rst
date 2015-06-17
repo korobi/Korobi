@@ -23,7 +23,6 @@ When executed, the output in the chat is as follows:
 .. code::
 
     * Korobi cries
-
 You can also create commands which refer to command arguments. These are represented as array indexes surrounded with
 curly braces and are replaced with whatever the user supplies. For example, :code:`.addcmd -a hit hits {0}` would add a
 new command that can be invoked by typing :code:`.hit <name>` in the channel. :code:`.hit lol768` would produce the following
@@ -32,7 +31,6 @@ output:
 .. code::
 
     * Korobi hits lol768
-
 The system will automatically ensure that the correct number of arguments are supplied when the user runs the command.
 An incorrect number of arguments will result in an error message notice being sent.
 
