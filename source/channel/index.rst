@@ -31,3 +31,4 @@ Contents
 
     requesting
     commands/index
+    ai
