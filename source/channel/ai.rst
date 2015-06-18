@@ -1,3 +1,7 @@
+====
+AI
+====
+
 Korobi supports sending automated messages in response to various triggers as part of the channel AI module. If you have the necessary permission, you can add and remove as well as update existing patterns for your channel. Patterns are available to view via the web interface. For an example, see https://dev.korobi.io/esper/factions/ai/.
 
 Creating a pattern
