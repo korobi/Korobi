@@ -20,7 +20,7 @@ action command. The bot will then send a CTCP ACTION message which is the equiva
 IRC clients using the :code:`/me` command. For example, a simple action command could be created with :code:`.addcmd -a cry cries`.
 When executed, the output in the chat is as follows:
 
-.. code::
+.. code-block:: none
 
     * Korobi cries
 You can also create commands which refer to command arguments. These are represented as array indexes surrounded with
@@ -28,7 +28,7 @@ curly braces and are replaced with whatever the user supplies. For example, :cod
 new command that can be invoked by typing :code:`.hit <name>` in the channel. :code:`.hit lol768` would produce the following
 output:
 
-.. code::
+.. code-block:: none
 
     * Korobi hits lol768
 The system will automatically ensure that the correct number of arguments are supplied when the user runs the command.
