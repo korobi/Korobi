@@ -33,3 +33,4 @@ the hard work.
    :titlesonly:
 
    channel/index
+   punishments/index
