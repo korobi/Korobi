@@ -28,3 +28,4 @@ Contents
     :titlesonly:
 
     warnings
+    kicks
