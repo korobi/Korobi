@@ -33,4 +33,14 @@ the hard work.
    :titlesonly:
 
    channel/index
+
+Punishments
+~~~~~~~~~~~
+
+The sections is for users who want to let Korobi handle their channel's punishments.
+
+.. toctree::
+   :maxdepth: 3
+   :titlesonly:
+
    punishments/index
