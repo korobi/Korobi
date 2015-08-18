@@ -2,9 +2,9 @@
 Warnings
 ========
 
-**Usage:** `.warn [-a] [-c <channel>] <nick> [message...]`
+**Usage:** :code:`.warn [-a] [-c <channel>] <nick> [message...]`
 
-The `-a` flag allows you to warn users anonymously by messaging the bot. This flag must be used in conjunction with the `-c` flag to specify the channel. The nick must be a user present in the channel, and they will be sent the message (if one is provided) following the nick in the form of a notice.
+The :code:`-a` flag allows you to warn users anonymously by messaging the bot. This flag must be used in conjunction with the :code:`-c` flag to specify the channel. The nick must be a user present in the channel, and they will be sent the message (if one is provided) following the nick in the form of a notice.
 
 A typical warning will be sent in a manner similar to the example below:
 
