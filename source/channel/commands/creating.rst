@@ -2,7 +2,7 @@
 Creating a new command
 ======================
 
-**Usage:** :code:`.<addcmd|setcmd|cmdinfo> [-a] [-v] <name> [value]`
+**Usage:** :code:`.<addcmd|setcmd> [-a] [-v] <name> [value]`
 
 Creating a command is a straightforward process. Assuming commands are enabled for the channel in question, it's simply
 a matter of using the 'addcmd' command. The command has a number of aliases which are documented above and takes one
