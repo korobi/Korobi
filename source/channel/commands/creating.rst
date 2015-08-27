@@ -12,6 +12,8 @@ with information about the supplied command name, if it exists.
 A basic command could be created by executing :code:`.addcmd gist Please use https://gist.github.com for long text`. All users
 can then use the command by typing :code:`.gist` which will print the result to the channel.
 
+You may overwrite a previous command by re-adding the command with the same name.
+
 Advanced commands
 =================
 
