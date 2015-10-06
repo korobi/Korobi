@@ -8,4 +8,5 @@ Just ask in #korobi on irc.esper.net. See the `EsperNet website <https://esper.n
 Prerequisites
 =============
 
+- You are a channel operator and can prove so.
 - Your channel is in a `supported network <https://korobi.io/networks>`__.
