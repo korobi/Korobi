@@ -10,7 +10,7 @@ Maybe a few days? Korobi Reminders are simple to use and precise down to the sec
 To get started using reminders you can hop on into a Korobi channel with reminders enabled and type :code:`.remind 1m Isn't this awesome?!`
 to setup your first reminder. In the case that reminders are disabled, Korobi will inform you.
 
-The following tables displays all possible time units which can be used for the :code:`<when>` argument:
+The following table displays all possible time units which can be used for the :code:`<when>` argument:
 
 +-----------+-------------+---------+
 | Time unit | Description | Example |
@@ -34,4 +34,4 @@ Remind others
 -------------
 
 You can remind other users on the same channel by using the :code:`-w` flag followed by the target's name. For example
-:code:`.remind -w SupaHam 1m You're still SupaHam` will set a reminder by you for user SupaHam that will execute a minute later.
+:code:`.remind -w SupaHam 1m You're still SupaHam` will set a reminder by you for the user SupaHam that will be sent a minute later.
