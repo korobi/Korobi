@@ -25,3 +25,4 @@ Contents
     aliases
     targeting
     removing
+    reminders
