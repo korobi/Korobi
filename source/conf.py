@@ -13,6 +13,7 @@
 # serve to show the default.
 
 import sys, os
+import datetime
 import korobi_docs_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
