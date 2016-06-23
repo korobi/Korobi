@@ -3,7 +3,7 @@
 # Build the docs
 sphinx-build -b html source build
 
-if [[ $? -ne 0 ]]; 
+if [[ $? -ne 0 ]]; then 
   echo "Sphinx exited with error code $?"
   exit 1
 fi
