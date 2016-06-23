@@ -3,6 +3,11 @@
 # Build the docs
 sphinx-build -b html source build
 
+if [[ $? -ne 0 ]]; 
+  echo "Sphinx exited with error code $?"
+  exit 1
+fi
+
 git config --global user.name "Korobi"
 git config --global user.email "korobi@korobi.io"
 
