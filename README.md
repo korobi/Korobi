@@ -14,9 +14,11 @@ You can setup an environment to instantly see the changes made to the docs.
 
 In terminal or the command line, within the directory containing this README, run the following commands:
 
-    npm install -g gulp
-    npm install
-    pip install -r etc/requirements.txt
-    gulp
+```bash
+npm install -g gulp
+npm install
+pip install -r etc/requirements.txt
+gulp
+```
 
 Your browser should open to reveal the docs. When you make a change to the documentation, the docs should refresh in the browser (possibly after a few seconds).
