@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Korobi'
-copyright = datetime.datetime.now().year + u', Korobi Team'
+copyright = str(datetime.datetime.now().year) + u', Korobi Team'
 author = u'Korobi Team'
 
 # The version info for the project you're documenting, acts as replacement for
