@@ -19,4 +19,4 @@ Targeting commands
 | .<             | Korobi will send you a notice with the channel contents in. Useful if you don't want to spam the channel.                    |
 +----------------+------------------------------------------------------------------------------------------------------------------------------+
 
-For example, I could send the results of the :code:`.factions` command to users lol768 and Kashike in a notice by executing :code:`.>> factions lol768,Kashike`.
+For example, I could send the results of the :code:`.factions` command to users lol768 and Kashike in a notice by executing :code:`.>>factions lol768,Kashike`.
