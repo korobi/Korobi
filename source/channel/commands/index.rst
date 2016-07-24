@@ -14,6 +14,8 @@ Channel commands are triggered by using the channel command prefix (configurable
 name or an alias. The command prefix is included on the channel overview page. For simplicity, the documentation
 assumes a command prefix of a period.
 
+To list commands available in the channel, issue the `.listcmd` command.
+
 Contents
 ========
 
