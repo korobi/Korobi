@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    
+
+    
+    <title>Removing commands | Korobi</title>
+    
+
+    <link rel="icon" href="https://korobi.vq.lc/favicon.ico" />
+    <link rel="author" type="text/plain" href="https://korobi.vq.lc/humans.txt" />
+    <link rel="stylesheet" href="https://korobi.vq.lc/assets/css/application.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+</head>
+<body>
+<nav class="navigation" role="navigation">
+    <div class="navigation--inner">
+        <div class="navigation--brand-mobile">
+            <a href="https://korobi.vq.lc" class="navigation--brandlink navigation--brandlink-mobile">Korobi</a>
+        </div>
+        <div class="navigation--brand">
+            <a href="https://korobi.vq.lc" class="navigation--brandlink" role="menuitem">Korobi</a>
+            <i class="navigation--menutoggle fa fa-navicon"></i>
+        </div>
+        <ul class="navigation--links">
+            <li class=""><a href="https://korobi.vq.lc" role="menuitem">Home</a></li><li class=""><a href="https://korobi.vq.lc/networks/" role="menuitem">Networks</a></li><li class="external active"><a href="https://docs.korobi.vq.lc" role="menuitem">Docs <i class="fa fa-external-link"></i></a></li><li><a href="https://korobi.vq.lc/about/" role="menuitem">About</a></li>
+        </ul>
+        <ul class="navigation--links navigation--links-secondary">
+        </ul>
+    </div>
+</nav>
+
+<main>
+    
+<!--googleoff: all-->
+<ul class="relbar">
+    <li><a href="../../index.html">Korobi 1.0.0-SNAPSHOT documentation</a> &raquo;</li>
+    <li><a href="../index.html" >Channel Management</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Channel Commands</a> &raquo;</li>
+</ul>
+<!--googleon: all-->
+<div class="docs">
+    <section>
+        
+  <div class="section" id="removing-commands">
+<h1>Removing commands<a class="headerlink" href="#removing-commands" title="Permalink to this headline">¶</a></h1>
+<p><strong>Usage:</strong> <code class="code docutils literal notranslate"><span class="pre">.&lt;delcmd|unsetcmd&gt;</span> <span class="pre">[-i</span> <span class="pre">&lt;index&gt;]</span> <span class="pre">&lt;name&gt;</span></code></p>
+<p>Removing dynamic commands is very straightforward: simply issue the <code class="code docutils literal notranslate"><span class="pre">delcmd</span></code> command and pass in the name of the command
+you want to remove. In addition to normal commands, you can use <code class="code docutils literal notranslate"><span class="pre">delcmd</span></code> or one of its aliases to remove a user-created
+command alias.</p>
+<p>If you’ve added multiple values to a command as described above, you can use the -i option to specify the index of the
+value to remove. You can get a list of values with the <code class="code docutils literal notranslate"><span class="pre">cmdinfo</span></code> command. At present, the first value is treated as
+the 0th index, so to remove the first value of the <code class="code docutils literal notranslate"><span class="pre">hit</span></code> command you could use <code class="code docutils literal notranslate"><span class="pre">.delcmd</span> <span class="pre">-i</span> <span class="pre">0</span> <span class="pre">hit</span></code></p>
+</div>
+
+
+    </section>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer--inner">
+        <div class="footer--copyright">
+            &copy; 2015-<span id="copyright-year">2016</span>, korobi.io team and contributors
+        </div>
+        <ul class="footer--links">
+            <li class="external"><a href="https://github.com/korobi/Korobi/issues" role="menuitem">Issues <i class="fa fa-external-link"></i></a></li><li class=""><a href="https://github.com/korobi/Korobi/commits/master" role="menuitem">Revisions <i class="fa fa-external-link"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<div id="bottom"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://korobi.vq.lc/assets/js/application.js"></script>
+<script>document.getElementById("copyright-year").innerHTML=(new Date().getFullYear());</script>
+</body>
+</html>

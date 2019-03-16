@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    
+
+    
+    <title>Channel Commands | Korobi</title>
+    
+
+    <link rel="icon" href="https://korobi.vq.lc/favicon.ico" />
+    <link rel="author" type="text/plain" href="https://korobi.vq.lc/humans.txt" />
+    <link rel="stylesheet" href="https://korobi.vq.lc/assets/css/application.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+</head>
+<body>
+<nav class="navigation" role="navigation">
+    <div class="navigation--inner">
+        <div class="navigation--brand-mobile">
+            <a href="https://korobi.vq.lc" class="navigation--brandlink navigation--brandlink-mobile">Korobi</a>
+        </div>
+        <div class="navigation--brand">
+            <a href="https://korobi.vq.lc" class="navigation--brandlink" role="menuitem">Korobi</a>
+            <i class="navigation--menutoggle fa fa-navicon"></i>
+        </div>
+        <ul class="navigation--links">
+            <li class=""><a href="https://korobi.vq.lc" role="menuitem">Home</a></li><li class=""><a href="https://korobi.vq.lc/networks/" role="menuitem">Networks</a></li><li class="external active"><a href="https://docs.korobi.vq.lc" role="menuitem">Docs <i class="fa fa-external-link"></i></a></li><li><a href="https://korobi.vq.lc/about/" role="menuitem">About</a></li>
+        </ul>
+        <ul class="navigation--links navigation--links-secondary">
+        </ul>
+    </div>
+</nav>
+
+<main>
+    
+<!--googleoff: all-->
+<ul class="relbar">
+    <li><a href="../../index.html">Korobi 1.0.0-SNAPSHOT documentation</a> &raquo;</li>
+    <li><a href="../index.html" accesskey="U">Channel Management</a> &raquo;</li>
+</ul>
+<!--googleon: all-->
+<div class="docs">
+    <section>
+        
+  <div class="section" id="channel-commands">
+<h1>Channel Commands<a class="headerlink" href="#channel-commands" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Korobi allows channel operators to create dynamic commands in a channel. Commands output a preset piece of text to a
+channel, either as a standard message or action. Commands can be targeted at individual users and sent via a notice
+or by highlighting the target in a channel message. Additionally, it’s possible to have the contents of a command sent
+to you without appearing in the channel.</p>
+<p>Channel commands are triggered by using the channel command prefix (configurable per channel) followed by the command
+name or an alias. The command prefix is included on the channel overview page. For simplicity, the documentation
+assumes a command prefix of a period.</p>
+<p>To list commands available in the channel, issue the <code class="code docutils literal notranslate"><span class="pre">.listcmd</span></code> command.</p>
+</div>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating.html">Creating a new command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aliases.html">Adding aliases for commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="targeting.html">Targeting commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removing.html">Removing commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reminders.html">User reminders</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+    </section>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer--inner">
+        <div class="footer--copyright">
+            &copy; 2015-<span id="copyright-year">2016</span>, korobi.io team and contributors
+        </div>
+        <ul class="footer--links">
+            <li class="external"><a href="https://github.com/korobi/Korobi/issues" role="menuitem">Issues <i class="fa fa-external-link"></i></a></li><li class=""><a href="https://github.com/korobi/Korobi/commits/master" role="menuitem">Revisions <i class="fa fa-external-link"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<div id="bottom"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://korobi.vq.lc/assets/js/application.js"></script>
+<script>document.getElementById("copyright-year").innerHTML=(new Date().getFullYear());</script>
+</body>
+</html>

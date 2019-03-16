@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    
+
+    
+    <title>Kicks | Korobi</title>
+    
+
+    <link rel="icon" href="https://korobi.vq.lc/favicon.ico" />
+    <link rel="author" type="text/plain" href="https://korobi.vq.lc/humans.txt" />
+    <link rel="stylesheet" href="https://korobi.vq.lc/assets/css/application.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+</head>
+<body>
+<nav class="navigation" role="navigation">
+    <div class="navigation--inner">
+        <div class="navigation--brand-mobile">
+            <a href="https://korobi.vq.lc" class="navigation--brandlink navigation--brandlink-mobile">Korobi</a>
+        </div>
+        <div class="navigation--brand">
+            <a href="https://korobi.vq.lc" class="navigation--brandlink" role="menuitem">Korobi</a>
+            <i class="navigation--menutoggle fa fa-navicon"></i>
+        </div>
+        <ul class="navigation--links">
+            <li class=""><a href="https://korobi.vq.lc" role="menuitem">Home</a></li><li class=""><a href="https://korobi.vq.lc/networks/" role="menuitem">Networks</a></li><li class="external active"><a href="https://docs.korobi.vq.lc" role="menuitem">Docs <i class="fa fa-external-link"></i></a></li><li><a href="https://korobi.vq.lc/about/" role="menuitem">About</a></li>
+        </ul>
+        <ul class="navigation--links navigation--links-secondary">
+        </ul>
+    </div>
+</nav>
+
+<main>
+    
+<!--googleoff: all-->
+<ul class="relbar">
+    <li><a href="../index.html">Korobi 1.0.0-SNAPSHOT documentation</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Punishments</a> &raquo;</li>
+</ul>
+<!--googleon: all-->
+<div class="docs">
+    <section>
+        
+  <div class="section" id="kicks">
+<h1>Kicks<a class="headerlink" href="#kicks" title="Permalink to this headline">¶</a></h1>
+<p><strong>Usage:</strong> <code class="code docutils literal notranslate"><span class="pre">.kick</span> <span class="pre">[-a]</span> <span class="pre">[-c</span> <span class="pre">&lt;channel&gt;]</span> <span class="pre">&lt;nick&gt;</span> <span class="pre">[reason...]</span></code></p>
+<p>The <code class="code docutils literal notranslate"><span class="pre">-a</span></code> flag allows you to kick users anonymously by messaging the bot. This flag must be used in conjunction with the <code class="code docutils literal notranslate"><span class="pre">-c</span></code> flag to specify the channel. The nick must be a user present in the channel, and they will be kicked using the provided reason. The reason will be visible to all users in the channel.</p>
+<p>A typical kick will appear in the channel in a manner similar to the example below:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;-- Korobi has kicked lol768 ((bendem) testing123)
+</pre></div>
+</div>
+<p>Anonymous kicks will use “a moderator” instead of including the nick of the issuing user.</p>
+</div>
+
+
+    </section>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer--inner">
+        <div class="footer--copyright">
+            &copy; 2015-<span id="copyright-year">2016</span>, korobi.io team and contributors
+        </div>
+        <ul class="footer--links">
+            <li class="external"><a href="https://github.com/korobi/Korobi/issues" role="menuitem">Issues <i class="fa fa-external-link"></i></a></li><li class=""><a href="https://github.com/korobi/Korobi/commits/master" role="menuitem">Revisions <i class="fa fa-external-link"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<div id="bottom"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://korobi.vq.lc/assets/js/application.js"></script>
+<script>document.getElementById("copyright-year").innerHTML=(new Date().getFullYear());</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    
+
+    
+    <title>AI | Korobi</title>
+    
+
+    <link rel="icon" href="https://korobi.vq.lc/favicon.ico" />
+    <link rel="author" type="text/plain" href="https://korobi.vq.lc/humans.txt" />
+    <link rel="stylesheet" href="https://korobi.vq.lc/assets/css/application.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+</head>
+<body>
+<nav class="navigation" role="navigation">
+    <div class="navigation--inner">
+        <div class="navigation--brand-mobile">
+            <a href="https://korobi.vq.lc" class="navigation--brandlink navigation--brandlink-mobile">Korobi</a>
+        </div>
+        <div class="navigation--brand">
+            <a href="https://korobi.vq.lc" class="navigation--brandlink" role="menuitem">Korobi</a>
+            <i class="navigation--menutoggle fa fa-navicon"></i>
+        </div>
+        <ul class="navigation--links">
+            <li class=""><a href="https://korobi.vq.lc" role="menuitem">Home</a></li><li class=""><a href="https://korobi.vq.lc/networks/" role="menuitem">Networks</a></li><li class="external active"><a href="https://docs.korobi.vq.lc" role="menuitem">Docs <i class="fa fa-external-link"></i></a></li><li><a href="https://korobi.vq.lc/about/" role="menuitem">About</a></li>
+        </ul>
+        <ul class="navigation--links navigation--links-secondary">
+        </ul>
+    </div>
+</nav>
+
+<main>
+    
+<!--googleoff: all-->
+<ul class="relbar">
+    <li><a href="../index.html">Korobi 1.0.0-SNAPSHOT documentation</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Channel Management</a> &raquo;</li>
+</ul>
+<!--googleon: all-->
+<div class="docs">
+    <section>
+        
+  <div class="section" id="ai">
+<h1>AI<a class="headerlink" href="#ai" title="Permalink to this headline">¶</a></h1>
+<p>Korobi supports sending automated messages in response to various triggers as part of the channel AI module. If you have the necessary permission, you can add and remove as well as update existing patterns for your channel. Patterns are available to view via the web interface. For an example, see <a class="reference external" href="https://korobi.vq.lc/network/spigot/channel/paper/ai/">https://korobi.vq.lc/network/spigot/channel/paper/ai/</a>.</p>
+<div class="section" id="creating-a-pattern">
+<h2>Creating a pattern<a class="headerlink" href="#creating-a-pattern" title="Permalink to this headline">¶</a></h2>
+<p>Creating a pattern is as simple as issuing the <code class="code docutils literal notranslate"><span class="pre">.aip</span> <span class="pre">-n</span></code> command in the channel you’d like to add the pattern to. You’ll receive a notice from Korobi which will include the index for the newly created pattern. This is important to keep in mind since the rest of the commands will reference the index.</p>
+<p>The next step is to specify the <em>pattern value</em>. This is the regular expression that will be applied to messages in the channel. If a match is found and the user hasn’t already triggered the auto message, it will be sent. The value is set by issuing <code class="code docutils literal notranslate"><span class="pre">.aip</span> <span class="pre">-i</span> <span class="pre">&lt;index&gt;</span> <span class="pre">-p</span> <span class="pre">&lt;pattern</span> <span class="pre">value&gt;</span></code>.</p>
+<p>As an example, a simple pattern matching the word ‘help’ anywhere in the message could be set up using <code class="code docutils literal notranslate"><span class="pre">.aip</span> <span class="pre">-i</span> <span class="pre">0</span> <span class="pre">-p</span> <span class="pre">help</span></code>.</p>
+<p>Next, it’s time to specify the message to be sent. This is achieved using <code class="code docutils literal notranslate"><span class="pre">.aip</span> <span class="pre">-i</span> <span class="pre">&lt;index&gt;</span> <span class="pre">-m</span> <span class="pre">&lt;message</span> <span class="pre">to</span> <span class="pre">send&gt;</span></code>. For example, <code class="code docutils literal notranslate"><span class="pre">.aip</span> <span class="pre">-i</span> <span class="pre">0</span> <span class="pre">-m</span> <span class="pre">Please</span> <span class="pre">ask</span> <span class="pre">your</span> <span class="pre">question</span> <span class="pre">and</span> <span class="pre">wait</span> <span class="pre">patiently</span> <span class="pre">for</span> <span class="pre">assistance!</span></code>.</p>
+<p>Finally, to enable the pattern use <code class="code docutils literal notranslate"><span class="pre">.aip</span> <span class="pre">-i</span> <span class="pre">&lt;index&gt;</span> <span class="pre">-e</span></code>. Now, your pattern will be active for all new messages in the channel.</p>
+<p>It’s possible to manipulate many other options for patterns, including case-sensitivity, selecting a user mode to only trigger the message for (e.g. excluding ops and voices), removing the “[Auto]” prefix etc. These options are not yet documented, but will be in due course.</p>
+</div>
+</div>
+
+
+    </section>
+</div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer--inner">
+        <div class="footer--copyright">
+            &copy; 2015-<span id="copyright-year">2016</span>, korobi.io team and contributors
+        </div>
+        <ul class="footer--links">
+            <li class="external"><a href="https://github.com/korobi/Korobi/issues" role="menuitem">Issues <i class="fa fa-external-link"></i></a></li><li class=""><a href="https://github.com/korobi/Korobi/commits/master" role="menuitem">Revisions <i class="fa fa-external-link"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+<div id="bottom"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://korobi.vq.lc/assets/js/application.js"></script>
+<script>document.getElementById("copyright-year").innerHTML=(new Date().getFullYear());</script>
+</body>
+</html>
