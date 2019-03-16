@@ -1,2 +1,2 @@
-git+https://github.com/sphinx-doc/sphinx.git@stable
+git+https://github.com/sphinx-doc/sphinx.git@master
 -e git+https://github.com/korobi/korobi_docs_theme.git#egg=korobi_docs_theme
