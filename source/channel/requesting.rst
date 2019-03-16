@@ -9,4 +9,4 @@ Prerequisites
 =============
 
 - You are a channel operator and can prove so.
-- Your channel is in a `supported network <https://korobi.io/networks>`__.
+- Your channel is in a `supported network <https://korobi.vq.lc/networks>`__.

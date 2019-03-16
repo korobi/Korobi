@@ -5,7 +5,7 @@ Korobi Documentation
 Introduction
 ============
 
-Welcome to the official documentation for the `Korobi <https://korobi.io/>`__ project.
+Welcome to the official documentation for the `Korobi <https://korobi.vq.lc/>`__ project.
 It aims to be simple and informative, if you find anything that is hard to understand or bad English please feel free
 to report it in the form of a GitHub issue, on our `Documentation project <https://github.com/korobi/Korobi/issues>`__.
 
